@@ -1,9 +1,11 @@
-import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react' // or vue, etc. depending on your setup
 
+// https://vitejs.dev/config/
 export default defineConfig({
-  base: '/Cars-Website/',
   plugins: [react()],
+  base: '/Cars-Website/',
+})
   assetsInclude: ['**/*.glb', '**/*.gltf', '**/*.hdr', '**/*.mp4', '**/*.jpeg'],
   server: {
     watch: {
