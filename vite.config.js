@@ -5,7 +5,6 @@ import react from '@vitejs/plugin-react' // or vue, etc. depending on your setup
 export default defineConfig({
   plugins: [react()],
   base: '/Cars-Website/',
-})
   assetsInclude: ['**/*.glb', '**/*.gltf', '**/*.hdr', '**/*.mp4', '**/*.jpeg'],
   server: {
     watch: {
